@@ -1,0 +1,181 @@
+body {
+    background: #c7b39b; /* Цвет фона и путь к файлу */ 
+    background-image: url(ekatdvorets9-e1609362912550.jpg);
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: overline;
+}
+
+.button {
+    background: #fff;
+    font-size: 14px;
+    padding: 10px 35px;
+    border-radius: 26px;
+    border: 1px solid #a3cfec;
+    text-transform: capitalize;
+    font-weight: 700;
+    color: #9fc4ee;
+    box-shadow: 0px 2px 2px #919ee6;
+    cursor: pointer;
+    margin: 0 auto;
+    display: block;
+}
+  
+.button:hover {
+    background: #a8b1b7;
+    color: #fff;
+  }
+  
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+.modal-content {
+    margin: 10% auto;
+    width: 60%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.9);
+    animation-name: modalopen;
+    animation-duration: var(--modal-duration);
+  }
+  
+.modal-header h2 {
+    margin: 0;
+  }
+  
+.modal-header {
+    background: var(--modal-color);
+    padding: 15px;
+    color: #fff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  
+.modal-body {
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.01);
+  }
+  
+.close {
+    color: #ccc;
+    float: right;
+    font-size: 30px;
+    color: #fff;
+  }
+  
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+@keyframes modalopen {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+.shopBlock {
+    border: solid 1px black;
+}
+
+.cartBlock { 
+    width: 417.5px;
+    height: 620px;
+    background: rgb(93, 191, 227);
+    padding: 5px;
+    border: solid 1px black; 
+    margin: auto;
+}
+
+.storeBlock { 
+    width: 417.5px;
+    height: 620px; 
+    background: rgb(93, 191, 227);
+    padding: 5px; 
+    border: solid 1px black; 
+}
+
+.totalBlock {
+    width: 150px;
+    background: #ccc;
+    padding: 5px;
+    border: solid 1px black;
+    margin-bottom: 2px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.entryButton {
+    width: 250px;
+    font-size: small;
+    background: #A2D9CE;
+    padding: 3px;
+    border: solid 1px #53bba6;
+    margin-bottom: 2px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.entryButton:hover {
+    background: #EC8A4B;
+    border: solid 1px #F0782B;
+}
+
+#prompt-form {         
+  display: inline-block;
+  padding: 5px 5px 5px 70px;
+  width: 200px;
+  border: 1px solid black;
+  vertical-align: middle;
+  margin-left: 50%;
+  background-color: #fff;
+}
+
+#prompt-form-container:before {
+  display: inline-block;
+  height: 100%;
+  content: '';
+  vertical-align: middle;
+}
+
+.card {
+  background-color: #ccc;
+  border: #000 solid 1px;
+  width: fit-content;
+  margin-left: 86.5%;
+  margin-top: -4%;
+  margin-bottom: 2%;
+  padding: 5.5px 20px;
+}
+
+#expiration {
+  margin-left: 0%;
+  width: 25%;
+}
+
+#zip {
+  width: 15%;
+  margin-left: 65.5%;
+  margin-top: -20%;
+}
+
+.cancel {
+  margin-left: 52.5%;
+}

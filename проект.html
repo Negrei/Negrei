@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="utf-8">
+
+  <body>
+<h1>Музейный комплекс г. Пушкина </h1>
+<button id="modal-btn" class="button">Екатерининский дворец</button>
+
+  <div id="my-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h2>Музейный комплекс "Екатерининский дворец"</h2>
+    </div>
+      <div class="modal-body">
+        <p>
+          <div class="shopBlock" id="shop">
+            <table>
+              <tr>
+                  <td><div class="storeBlock" id="store"></div></td>
+                  <td><div class="cartBlock" id="cart"></div></td>
+              </tr>
+              <tr>
+                  <td></td>
+                  <td><div class="totalBlock" id="total">Подтвердить оплату: 0</div></td>
+              </tr>
+            </table>
+          <div class="card">
+            <button.card id="button">Оплатить</button>
+          </div>
+            <div id="prompt-form-container" hidden>
+              <form id="prompt-form">
+                <div id="prompt-message">Введите данные банковской карты</div>
+                  <input name="ccnumber" type="tel" id="cc" placeholder="XXXX XXXX XXXX XXXX" pattern="\d{4} \d{4} \d{4} \d{4}" class="masked" title="16-digit number">>
+                  <input id="expiration" type="tel" placeholder="MM/YY" class="masked" pattern="(1[0-2]|0[1-9])\/\d\d" data-valid-example="11/18" title="2-digit month and 2-digit year">>
+                  <input id="zip" type="tel" name="zipcode" placeholder="XXX" pattern="\d{3}" class="masked" title="3-digit zip code">
+              </form>
+            </div>
+          </div>
+        </p>
+      </div>
+    </div>
+  </div>
+ </body>
+
+ 
+ <link href="project_style.css" rel="stylesheet">
+ <script src="project_interactive.js"></script>
+
+</html>
